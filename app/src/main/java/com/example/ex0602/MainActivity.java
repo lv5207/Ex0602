@@ -27,10 +27,9 @@ public class MainActivity extends AppCompatActivity {
         count++;
         btn.setText("This is a click number: "+count);
 
-        if (count == 7)
+        if (count % 7 == 0)
         {
-            btn.setText("Enough to click. Go to new start!");
-            count = 0;
+            btn.setText("BOOM !");
         }
     }
 }
